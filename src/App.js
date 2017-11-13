@@ -10,10 +10,6 @@ import Footer from './components/footerComponents/footer';
 import Homepage from './components/pages/homePage';
 import Products from './components/pages/products';
 
-app.get('/', function (req, res) {
-  res.render('index', {});
-});
-
 class App extends Component {
   render() {
     return (
