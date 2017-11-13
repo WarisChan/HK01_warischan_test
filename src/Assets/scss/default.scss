@@ -1,0 +1,136 @@
+@import "_config.scss";
+footer{
+	position: relative;
+	display: block;
+	width: 100%;
+	background: $white;
+	color: $deepgrey;
+	height: 20px;
+	
+	.logo{
+		position: absolute;
+		bottom: 25%; right:15px;
+		font-size: 12px;
+		@include translateY(-25%);
+	}
+}
+
+.container{
+	position: relative;
+	
+	.spacing{
+		margin-top: 55px;
+	}
+}
+
+.gross-app-group{
+	overflow: auto;
+	
+	.h2{
+		font-weight: bold;
+	}
+	
+	.row-fluid{
+		white-space: nowrap;
+	}
+	
+	.row-fluid{
+		.col-xs-4 {
+			display: inline-block;
+			float: none;
+			color: #000; 
+			font-size: 12px; 
+			margin: 10px 20px;
+			width:80px;
+			
+			p{
+				margin: 0px;
+				text-overflow: ellipsis;
+				width: 80px;
+				height: 18px;
+				white-space: nowrap;
+				overflow: hidden;
+			}
+			
+			.category{
+				color: $deepgrey;
+			}
+		}
+	}
+	
+	.gross-app-icon{border-radius: 5px;}
+}
+
+.top-app-group{	
+
+	.app-container{
+		margin: 10px 0;
+		padding: 15px;
+		border-bottom: 1px solid rgb(222,222,222);
+		
+		.app-id{
+			min-width: 30px;
+			margin: 0 10px;
+			color: $deepgrey;
+		}
+		
+		.category{
+			color: $deepgrey;
+			font-size: 14px;
+		}
+		
+		.top-app-icon{
+			margin: 0 10px;
+			border-radius: 5px;
+		}
+		
+		.top-app-icon-even{
+			margin: 0 10px;
+			border-radius: 25px;
+		}
+	}
+	
+}
+
+.right-inner-addon{
+	background: $lightgrey;
+	padding: 5px 5px 8px 5px;
+	position: fixed;
+	z-index: 9999;
+	width: 100%;
+	border: 1px solid rgb(222,222,222);
+	
+	.search-container{
+		width:100%;
+	}
+	
+	input{
+		width: 100%;
+		border-radius: 5px;
+		background: $grey;
+		color: $black;
+		text-align: center;
+		outline: none;
+		font-size:18px;
+		padding: 5px;
+		-webkit-appearance: none;
+		border: 1px solid rgb(222,222,222);
+	}
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+	height: 6px;
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: $lightgrey;
+	border: 1px solid rgb $lightgrey_rgb;
+	border-radius: 25px;
+}
+
+.pagination>li{
+	cursor: pointer;
+}
+

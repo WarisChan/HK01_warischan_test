@@ -1,0 +1,26 @@
+$black: #000000;
+$white: #FFFFFF;
+$grey: #CFCFCF;
+$lightgrey: #DEDEDE;
+$lightgrey_rgb: (222,222,222);
+$deepgrey: #888888;
+
+body{
+	font-family: 'Pen Sans' sans-serif;
+	font-size: 18px;
+	color: $black;
+	font-weight: 400;
+	font-style: normal;
+}
+
+@mixin translateY($e){
+	-webkit-transform: translateY($e);
+	-moz-transform: translateY($e);
+	transform: translateY($e);
+}
+
+@mixin transition($e){
+	-webkit-transition: $e;
+	-moz-transition: $e;
+	transition: $e;
+}
