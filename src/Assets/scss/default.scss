@@ -15,6 +15,11 @@ footer{
 	}
 }
 
+a, a:hover, a:focus, a:active{
+	color: $deepergrey;
+	text-decoration: none;
+}
+
 .container{
 	position: relative;
 	

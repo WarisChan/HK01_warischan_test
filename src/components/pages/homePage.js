@@ -271,9 +271,11 @@ class Homepage extends React.Component {
 						<div className="row-fluid">
 							{this.state.grossingapp.map( (item,i) =>
 								<div key={i} className="col-xs-4 align-top">
+									<a href={item["link"]["attributes"].href} target="_blank">
 									<img className="gross-app-icon" alt="" src={item["im:image"][0].label} />
 									<p>{item["im:name"].label}</p>
 									<p className="category">{item.category.attributes.label}</p>
+									</a>
 								</div>
 							)}
 						</div>
@@ -287,7 +289,7 @@ class Homepage extends React.Component {
 								<tr>
 									<td rowSpan="2"><div className="app-id">{i + (current_page*10) + 1}</div></td>
 									<td rowSpan="2"><img className={( (i+1)%2 ? 'top-app-icon' : 'top-app-icon-even')} alt="" src={item["im:image"][0].label} /></td>
-									<td>{item["im:name"].label}</td>
+									<td><a href={item["link"]["attributes"].href} target="_blank">{item["im:name"].label}</a></td>
 								</tr>
 								<tr>
 									<td><span className="category">{item.category.attributes.label}</span></td>
